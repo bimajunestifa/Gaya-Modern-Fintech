@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+    <defs>
+        <linearGradient id="logoBg" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#2D60FF" />
+            <stop offset="100%" stop-color="#1814F3" />
+        </linearGradient>
+        <linearGradient id="chipGold" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#FDE047" />
+            <stop offset="100%" stop-color="#F59E0B" />
+        </linearGradient>
+    </defs>
+    <!-- Rounded Shield / Squircle Base -->
+    <rect width="64" height="64" rx="18" fill="url(#logoBg)"/>
+    
+    <!-- Bank Card Outline -->
+    <rect x="10" y="14" width="44" height="36" rx="8" stroke="#FFFFFF" stroke-width="3" fill="none"/>
+    <!-- Card Top Strip -->
+    <line x1="10" y1="24" x2="54" y2="24" stroke="#FFFFFF" stroke-width="2.5" opacity="0.8"/>
+    
+    <!-- EMV Chip Gold -->
+    <rect x="16" y="30" width="10" height="8" rx="2" fill="url(#chipGold)"/>
+    
+    <!-- Contactless Waves -->
+    <path d="M36 31 C38 33, 38 37, 36 39 M41 28 C44 32, 44 38, 41 42" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" opacity="0.9"/>
+</svg>
+
