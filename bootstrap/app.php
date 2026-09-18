@@ -13,11 +13,13 @@ return Application::configure(basePath: dirname(__DIR__))
     ->withMiddleware(function (Middleware $middleware): void {
         $middleware->web(append: [
             \App\Http\Middleware\SetLocale::class,
+            \App\Http\Middleware\PreventBackHistory::class,
         ]);
         $middleware->redirectTo(
             guests: '/login',
             users: '/'
         );
+    })
     ->withExceptions(function (Exceptions $exceptions): void {
         $exceptions->render(function (\Illuminate\Session\TokenMismatchException $e, \Illuminate\Http\Request $request) {
             return redirect()->route('login')->with('error', 'Sesi login telah disegarkan. Silakan coba masuk kembali.');

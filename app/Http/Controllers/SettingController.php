@@ -11,13 +11,13 @@ class SettingController extends Controller
 {
     public function index()
     {
-        $user = Auth::user() ?? \App\Models\User::first();
+        $user = Auth::user();
         return view('settings.index', compact('user'));
     }
 
     public function update(Request $request)
     {
-        $user = Auth::user() ?? \App\Models\User::first();
+        $user = Auth::user();
 
         if (!$user) {
             return redirect()->route('login')->with('error', 'Silakan login terlebih dahulu untuk mengubah profil.');
