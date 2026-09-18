@@ -331,6 +331,13 @@
             document.getElementById('emailField').value = 'admin@bankdash.com';
             document.getElementById('passwordField').value = 'admin123';
         }
+
+        // Prevent 419 Page Expired caused by browser back/forward cache (bfcache)
+        window.addEventListener('pageshow', function (event) {
+            if (event.persisted) {
+                window.location.reload();
+            }
+        });
     </script>
 </body>
 </html>

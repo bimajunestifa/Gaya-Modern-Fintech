@@ -18,7 +18,8 @@ return Application::configure(basePath: dirname(__DIR__))
             guests: '/login',
             users: '/'
         );
-    })
     ->withExceptions(function (Exceptions $exceptions): void {
-        //
+        $exceptions->render(function (\Illuminate\Session\TokenMismatchException $e, \Illuminate\Http\Request $request) {
+            return redirect()->route('login')->with('error', 'Sesi login telah disegarkan. Silakan coba masuk kembali.');
+        });
     })->create();
