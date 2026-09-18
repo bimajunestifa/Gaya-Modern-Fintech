@@ -49,12 +49,15 @@ Sistem dilengkapi tombol pengalih bahasa instan dengan dukungan **4 bahasa dunia
 
 ## 🚀 Fitur Utama Sistem
 
+- **Dual-Banking Accounting Engine (Konvensional & Syariah)**:
+  - **PSAK 71 / IFRS 9**: Pemodelan kuantitatif *Expected Credit Loss (ECL)* kredit konvensional dengan 3-Stage Classification dan stress testing makroekonomi.
+  - **PSAK 413 (Standar DSAS IAI 2024)**: Pemodelan penurunan nilai aset keuangan syariah berdasarkan akad (*Murabahah, Musyarakah, Mudharabah, Ijarah, Istishna', Qardh*) dan pembentukan provisi *Kafalah*.
 - **Executive Financial Dashboard**: Ringkasan total likuiditas kas, *inflow*, *outflow*, kartu debit virtual, serta mutasi terbaru.
 - **Visual Analytics & Interactive Charts**: Grafik perbandingan setoran vs penarikan mingguan, persentase kategori pengeluaran, dan tren riwayat saldo tahunan.
 - **Batch Import Excel / CSV**: Unggah data transaksi dan portofolio keuangan secara massal dengan pemetaan otomatis.
 - **Credit & Risk Portfolio Analysis**: Pemantauan profil risiko kredit debitur, klasifikasi kolektibilitas, dan simulasi stresstest makroekonomi.
 - **Cetak Rekening Koran Resmi**: Pembuat rekening koran nasabah (*Bank Statement*) dengan tata letak siap cetak / PDF.
-- **Security & Audit Trail Log**: Pencatatan riwayat setiap aktivitas transaksi dan perubahan data pengguna.
+- **Security & Audit Trail Log**: Pencatatan riwayat setiap aktivitas transaksi dan perubahan data pengguna dengan proteksi rate limiter dan anti-bfcache.
 
 ---
 

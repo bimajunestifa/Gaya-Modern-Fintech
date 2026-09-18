@@ -218,6 +218,60 @@
                 <span>{{ __('Jurnal Otomatis PSAK') }}</span>
             </a>
 
+            <!-- PSAK 413 SYARIAH SECTION (NEW STANDAR DSAS IAI) -->
+            <div class="pt-4 pb-2 flex items-center justify-between px-4">
+                <span class="text-[11px] font-bold text-emerald-600 uppercase tracking-wider">{{ __('PSAK 413 Syariah') }}</span>
+                <span class="text-[9px] bg-emerald-100 text-emerald-700 font-bold px-1.5 py-0.5 rounded">{{ __('DSAS IAI 2024') }}</span>
+            </div>
+
+            <!-- PSAK 413: Dashboard & ECL Akad -->
+            <a href="{{ route('psak413.dashboard') }}" 
+               class="flex items-center gap-4 px-4 py-3.5 rounded-xl font-semibold text-sm transition-all duration-200 {{ request()->routeIs('psak413.dashboard') ? 'bg-emerald-50 text-emerald-700 font-bold shadow-sm' : 'text-slate-500 hover:bg-emerald-50/50 hover:text-emerald-700' }}">
+                <svg class="w-5 h-5 {{ request()->routeIs('psak413.dashboard') ? 'text-emerald-600' : 'text-slate-400' }}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                </svg>
+                <span>{{ __('ECL Pembiayaan & Kafalah') }}</span>
+            </a>
+
+            <!-- PSAK 413: Stress Test Makro Syariah -->
+            <a href="{{ route('psak413.stresstest') }}" 
+               class="flex items-center gap-4 px-4 py-3.5 rounded-xl font-semibold text-sm transition-all duration-200 {{ request()->routeIs('psak413.stresstest') ? 'bg-emerald-50 text-emerald-700 font-bold shadow-sm' : 'text-slate-500 hover:bg-emerald-50/50 hover:text-emerald-700' }}">
+                <svg class="w-5 h-5 {{ request()->routeIs('psak413.stresstest') ? 'text-emerald-600' : 'text-slate-400' }}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                </svg>
+                <span>{{ __('Stress Test Syariah') }}</span>
+            </a>
+
+            <!-- PSAK 413: Laporan & Pengungkapan CALK -->
+            <a href="{{ route('psak413.reports') }}" 
+               class="flex items-center gap-4 px-4 py-3.5 rounded-xl font-semibold text-sm transition-all duration-200 {{ request()->routeIs('psak413.reports') ? 'bg-emerald-50 text-emerald-700 font-bold shadow-sm' : 'text-slate-500 hover:bg-emerald-50/50 hover:text-emerald-700' }}">
+                <svg class="w-5 h-5 {{ request()->routeIs('psak413.reports') ? 'text-emerald-600' : 'text-slate-400' }}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                </svg>
+                <span>{{ __('Neraca & CALK Syariah') }}</span>
+            </a>
+
+            <!-- PSAK 413: Batch Excel Syariah -->
+            <a href="{{ route('psak413.import') }}" 
+               class="flex items-center justify-between px-4 py-3.5 rounded-xl font-semibold text-sm transition-all duration-200 {{ request()->routeIs('psak413.import') ? 'bg-emerald-100 text-emerald-800 font-bold shadow-sm' : 'text-slate-500 hover:bg-emerald-50/50 hover:text-emerald-700' }}">
+                <div class="flex items-center gap-4">
+                    <svg class="w-5 h-5 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"></path>
+                    </svg>
+                    <span>{{ __('Batch Excel PSAK 413') }}</span>
+                </div>
+                <span class="text-[9px] bg-emerald-600 text-white font-bold px-1.5 py-0.5 rounded">AKAD</span>
+            </a>
+
+            <!-- PSAK 413: Jurnal Otomatis Syariah -->
+            <a href="{{ route('psak413.journals') }}" 
+               class="flex items-center gap-4 px-4 py-3.5 rounded-xl font-semibold text-sm transition-all duration-200 {{ request()->routeIs('psak413.journals') ? 'bg-emerald-50 text-emerald-700 font-bold shadow-sm' : 'text-slate-500 hover:bg-emerald-50/50 hover:text-emerald-700' }}">
+                <svg class="w-5 h-5 {{ request()->routeIs('psak413.journals') ? 'text-emerald-600' : 'text-slate-400' }}" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                </svg>
+                <span>{{ __('Jurnal Otomatis Syariah') }}</span>
+            </a>
+
             <div class="pt-4 pb-2">
                 <span class="px-4 text-[11px] font-bold text-slate-400 uppercase tracking-wider">{{ __('CMS & Admin') }}</span>
             </div>

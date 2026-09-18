@@ -22,6 +22,9 @@ class DatabaseSeeder extends Seeder
             'email' => 'admin@bankdash.com',
         ]);
 
-        $this->call(BankDataSeeder::class);
+        $this->call([
+            BankDataSeeder::class,
+            Psak413DataSeeder::class,
+        ]);
     }
 }

@@ -158,5 +158,13 @@
     "jam lalu": "hours ago",
     "Lihat Log Audit Lengkap": "View Full Audit Trail",
     "Kepatuhan PSAK 71 / IFRS 9": "PSAK 71 / IFRS 9 Compliance",
-    "Audit Keamanan & Ledger": "Security & Ledger Audit"
+    "Audit Keamanan & Ledger": "Security & Ledger Audit",
+    "PSAK 413 Syariah": "PSAK 413 Islamic",
+    "DSAS IAI 2024": "DSAS IAI 2024",
+    "ECL Pembiayaan & Kafalah": "Islamic ECL & Kafalah",
+    "Stress Test Syariah": "Islamic Stress Test",
+    "Neraca & CALK Syariah": "Sharia Balance & CALK",
+    "Batch Excel PSAK 413": "PSAK 413 Excel Batch",
+    "Jurnal Otomatis Syariah": "Sharia Auto Journals",
+    "AKAD": "CONTRACT"
 }

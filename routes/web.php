@@ -16,6 +16,11 @@ use App\Http\Controllers\PsakStressTestController;
 use App\Http\Controllers\PsakReportController;
 use App\Http\Controllers\PsakImportController;
 use App\Http\Controllers\PsakJournalController;
+use App\Http\Controllers\Psak413\Psak413DashboardController;
+use App\Http\Controllers\Psak413\Psak413StressTestController;
+use App\Http\Controllers\Psak413\Psak413ReportController;
+use App\Http\Controllers\Psak413\Psak413ImportController;
+use App\Http\Controllers\Psak413\Psak413JournalController;
 
 // 1. Language Switcher (Public)
 Route::get('/lang/{locale}', function ($locale) {
@@ -90,5 +95,20 @@ Route::middleware('auth')->group(function () {
         Route::post('/import', [PsakImportController::class, 'upload'])->name('upload');
         Route::post('/reset', [PsakImportController::class, 'resetData'])->name('reset');
         Route::get('/journals', [PsakJournalController::class, 'index'])->name('journals');
+    });
+
+    // PSAK 413: Islamic Banking Impairment (ECL) & Kafalah Provisioning
+    Route::prefix('psak413')->name('psak413.')->group(function () {
+        Route::get('/dashboard', [Psak413DashboardController::class, 'index'])->name('dashboard');
+        Route::get('/stresstest', [Psak413StressTestController::class, 'index'])->name('stresstest');
+        Route::post('/stresstest/simulate', [Psak413StressTestController::class, 'simulate'])->name('stresstest.simulate');
+        Route::get('/reports', [Psak413ReportController::class, 'index'])->name('reports');
+        Route::get('/import', [Psak413ImportController::class, 'index'])->name('import');
+        Route::get('/download-template', [Psak413ImportController::class, 'downloadTemplate'])->name('download_template');
+        Route::get('/download-template-excel', [Psak413ImportController::class, 'downloadTemplateExcel'])->name('download_template_excel');
+        Route::post('/import', [Psak413ImportController::class, 'upload'])->name('upload');
+        Route::post('/reset', [Psak413ImportController::class, 'resetData'])->name('reset');
+        Route::get('/journals', [Psak413JournalController::class, 'index'])->name('journals');
+        Route::post('/journals/generate', [Psak413JournalController::class, 'generate'])->name('journals.generate');
     });
 });
