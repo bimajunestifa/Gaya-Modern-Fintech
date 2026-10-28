@@ -57,7 +57,7 @@
                         </div>
                     </div>
                 </div>
-
+                
                 <div class="flex items-center justify-between pt-2">
                     <a href="{{ route('psak413.download_template') }}" class="text-xs font-bold text-emerald-700 hover:underline flex items-center gap-1.5">
                         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -95,7 +95,7 @@
                 <form action="{{ route('psak413.reset') }}" method="POST" onsubmit="return confirm('Apakah Anda yakin ingin me-reset portofolio ke data default?');">
                     @csrf
                     <button type="submit" class="w-full py-2.5 bg-amber-50 hover:bg-amber-100 text-amber-700 font-bold text-xs rounded-xl transition-colors">
-                        Reset ke Data Default
+                        Reset ke Data Default   
                     </button>
                 </form>
             </div>

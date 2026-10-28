@@ -154,7 +154,7 @@
                 </svg>
                 <span>{{ __('Pinjaman & Kredit') }}</span>
             </a>
-
+               
             <!-- Investasi & Treasury -->
             <a href="{{ route('investments.index') }}" 
                class="flex items-center gap-4 px-4 py-3.5 rounded-xl font-semibold text-sm transition-all duration-200 {{ request()->routeIs('investments.*') ? 'bg-blue-50/80 text-brand-blue font-bold shadow-sm' : 'text-slate-500 hover:bg-slate-50 hover:text-slate-900' }}">
